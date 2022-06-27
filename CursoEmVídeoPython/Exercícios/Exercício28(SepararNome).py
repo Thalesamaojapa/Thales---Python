@@ -1,0 +1,5 @@
+nome =  str(input('Qual é o seu nome? ')).title()
+nomesplit = nome.split()
+print('Prazer em te conhecer: {}'.format(nome))
+print('Seu primeiro nome é: {}'.format(nomesplit[0]))
+print('Seu primeiro nome é: {}'.format(nomesplit[-1]))

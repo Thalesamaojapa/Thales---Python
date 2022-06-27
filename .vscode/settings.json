@@ -1,0 +1,11 @@
+{
+    "python.analysis.extraPaths": [
+        "./CursoEmVídeoPython/Exercício106(PrimeiraModularização).py",
+        "./CursoEmVídeoPython/Exercício107(FormatandoMoedas).py",
+        "./CursoEmVídeoPython/Exercício108(ParametroDeFormataçãoOpcional)",
+        "./CursoEmVídeoPython",
+        "./CursoEmVídeoPython/ExPacote",
+        "./CursoEmVídeoPython/Exercício111(ValidarDinheiro)",
+        "./Exercício115(Menu)"
+    ]
+}

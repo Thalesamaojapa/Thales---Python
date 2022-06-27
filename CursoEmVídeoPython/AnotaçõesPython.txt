@@ -1,0 +1,318 @@
+Dia 001 
+
+Print=escrever na tela 
+
+Input=interagir com o usuario 
+
+Dia 002 Tipos Primitivos e saida de Dados 
+
+Int=numero inteiro 
+
+#exemplo de uso 
+
+N2=int(input(‘digite um numero’))
+
+Int= 7,  -4,   19, 40398 
+
+Float= 7.8,    8.9,  -15.09009,  7.0  (O ponto ‘.’ corresponde a uma virgula) 
+
+Bool= True, False (sempre tem que ter a primeira letra maiuscula) 
+
+Str= ’’Olá mundo’’  ‘’7’’ (str=strings=frase) 
+
+Dissecar variável 
+
+Para dissecar variáveis temos comandos como: 
+
+Isuper(checa se é maiúsculo) 
+
+Isalpha(checa se é alfabético) 
+
+E assim por diante... 
+
+Esses códigos devem ser usados da seguinte forma(percebe-se que a letra V é a variavel que a gente quer dissecar) 
+
+A = (v.isnumeric()) 
+
+Ou você pode optar por fazer já direto no print 
+
+Print(‘é numérico?’, v.isnumeric()) 
+
+OPERADORES ARITMETICOS 
+
++ ADIÇÃO 
+
+-SUBTRAÇAO 
+
+*MULTIPLICAÇAO 
+
+/DIVISAO 
+
+**POTENCIA 
+
+//DIVISAO INTEIRA 
+
+%RESTO DA DIVISAO 
+
+ORDEM DE PRECEDENCIA 
+
+1-( ) 
+
+2-** 
+
+3-*, /, //, % 
+
+4- +, - 
+
+------------------------------------------------ 
+
+Para continuar com o print na mesma linha utilizamos: end=’   ‘  
+
+Já para separar o print em linhas diferentes voce pode usar: \n 
+
+AULA04 
+
+BIBILIOTECAS 
+
+Import Bebidas(bebidas seria o nome da bibliotca) 
+
+From bebida import milk(importar so um codigo da biblioteca) 
+
+--------------------------------------------------- 
+
+Importmath 
+
+      Ceil(arredondar pra cima) 
+
+      Floor(arredondar pra baixo) 
+
+      Trunc(elimina da virgula pra frente) 
+
+      Pow(potencia) 
+
+       Sqrt(raiz quadrada) 
+
+      Factorial(fatorial(n sei oq é)) 
+
+---------------------- 
+
+Import random 
+
+A = random,randint(1, 10)(randomizar um numero aleatório entre 1 e 10)
+
+para sortear um número podemos adcionar todas as variáveis que serão sorteadas
+ex: lista[n1, n2, n3, n3] 
+
+depois usamos random.choice(lista)
+
+para embaralhar/sortear ordem
+shuffle(lista)
+
+---------------------------- 
+
+STRINGS 
+
+Len(variavel)  = Mostra a quantidade de letras que tem na sua string 
+
+Frase.count(‘letra’) = mostra a quantidade de uma determinada letra na sua string 
+
+Palavra in Frase = existe tal palavra na string 
+
+Frase.replace(‘palavra’ , ‘outra palavra’) = coloca outra palavra no lugar da palavra original da string 
+
+Frase.upper() = maiusculo 
+
+Frase.lower() = minusculo 
+
+Frase.capitalize() = primeira letra no maiusculo 
+
+Frase.title() = cada inicio de palavra em maiusculo 
+
+Frase.strip() = remove os espaços  
+
+Frase.rstrip() = remove os espaços da direita 
+
+Frase.lstrip() = remove os espaços da esquerda 
+
+Frase.split() = a cada espaço ele reinicia a palavra e faz uns negocio loko (explicaçao melhor no video 09 min 28:00)  
+
+‘-’.join(frase) = contrariode split, 28:56 
+
+ao colocar a letra 'r' ele vai executar o comando começando da direita
+mesm coisa ao colocar 'l', ele conta da esquerda
+
+-------------------------------------------------------------------
+
+Cores no terminal
+
+Código ANSI
+
+\033[código do estilo;código de cor do texto;código de cor do fundo e uma letra 'm' minuscula no final
+
+stilo:
+0: nulo
+1: negrito
+4: sublinhado	
+7: inverter fundo e letra
+
+cor:
+30 preto
+31 vermelho
+32 verde
+33 amarelo
+34 azul
+35 roxo
+36 ciano
+37 cinza(cor padrão)
+97 branco
+fundo:
+40 - 47, sendo 107 para branco na mesma ordem que a cor
+
+colocar o Código novamente no final da frase vai cancelar as mudanças até o ponto em que o código foi inserido novamente
+
+cores = {    #cores normais
+
+         'vermelho':'\033[31m',
+         'azul':'\033[34m',
+         'amarelo':'\033[33m',
+         'branco':'\033[30m',
+         'roxo':'\033[35m',
+         'verde':'\033[32m',
+         'ciano':'\033[36m',
+         'limpa':'\033[m',
+         'preto e branco':'\033[7;97;m',
+
+                #cores em negrito
+
+         'vermelho em negrito':'\033[1;31m',
+         'azul em negrito':'\033[1;34m' ,
+         'amarelo em negrito':'\033[1;33m' ,
+         'branco em negrito':'\033[1;97m',
+         'roxo em negrito':'\033[1;35m',
+         'verde em negrito':'\033[1;32m',
+         'ciano em negrito':'\033[1;36m',
+
+               #cores sublinhadas
+
+         'vermelho sublinhado':'\033[4;31m',
+         'azul sublinhado':'\033[4;34m',
+         'amarelo sublinhado':'\033[4;33m',
+         'branco sublinhado':'\033[4;97m',
+         'roxo sublinhado':'\033[4;35m',
+         'verde sublinhado':'\033[4;32m',
+         'ciano sublinhado':'\033[4;36m'
+         }
+
+
+
+---------------------------------------------------------------
+for:
+
+for c(variavel controladora) in range (1, 6):
+	print('Oi')
+saída:
+Oi 6x
+
+poreém se fosse:
+for c in range (1, 6)
+	print('Oi')
+print('Fim')
+saída:
+Oi 5x
+Fim
+
+pra sair Oi 6x o range teria que ser (0, 6)
+
+for c in range (0, 6)
+	print(c)
+saída:
+0
+1
+2
+3
+4
+5
+
+for c in range (6, 0, -1)
+saída:
+6
+5
+4
+3
+2
+1
+
+for c in range (0, 7, 2)
+saída:
+0
+2
+4
+6
+
+
+
+var.append('x') = adiciona x no final da lista
+var.inser(0,'x') = adiciona x numa posição determinada, exemplo usado foi 0
+del var[0] = remove o item da posição determinada
+var.pop(0) ou var.pop() = remove o item da posição determinada e se nenhuma for determinada ele removerá o ultimo item
+var.remove('x') = diferente de del e pop, ele n elimina um valor de uma posição determinada, ele elimina um valor determinado
+var = list(range(4,11)) = cria uma lista de números a partir de um range // var = [4,5,6,7,8,9,10]
+var.sort() = ordena os valores
+var.sort(reverse=True) = ordena no inverso
+len(var) = mede o número de elementos
+listas são mutáveis! 
+se tiver 2 elementos iguais e eu der remove ele irá remover o que aparecer primeiro
+var.clear() = limpa a lista
+
+
+enumerate ======
+valores = [1, 2, 4, 9]
+for c, v in enumerate(valores):
+	print(f'Na posição {c} achei o valor {v}')
+output = 
+Na posição 0 achei o valor 1
+Na posição 1 achei o valor 2
+Na posição 2 achei o valor 4
+Na posição 3 achei o valor 9
+
+a primeira variável(c) vai agir como contador
+a segunda(v) vai ser aquela que pega os valores das lista em ordem
+
+lista1 = [2, 3, 4, 7]
+lista2 = lista1
+lista2[2] = 8
+print(lista2)
+ele vai alterar o valor das 2, pois assim estamos ligando elas
+para criar uma cópia
+lista2 = lista1[:]
+agora sim ele só vai alterar o valor da lista2
+
+no exercício 79 tem um caso especial do sort!
+link: https://stackoverflow.com/questions/7301110/why-does-return-list-sort-return-none-not-the-list
+
+lista dentro de lista
+var = list()
+var.append(outr.var[:]) para incluir uma lista dentro de outra
+exemplo:
+dados = input de nome e idade
+dados[0] = Pedro
+dados[1] = 13
+pessoas = pessoas.append(dados[:])
+pessoas[0] = 'Pedro', 13
+
+outra forma :
+pessoas = [['Pedro', 13], ['Thales', 14]]
+Pedro 13 é o indice 0
+Thales 4 é o indice 1
+
+print(pessoas[0][0] = 'Pedro'
+ele vai pegar o indice 0 de pessoas e dentro de pessoas o indice 0 de dados
+print(pessoas[1][1] = 14
+print(pessoas[1]) = ['Thales', 14]
+
+
+
+	
+
+
+
